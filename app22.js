@@ -16,3 +16,10 @@ var swiper = new Swiper(".home-slider", {
         disableOnInteraction:false,
     },
     });
+var menuBtn = document.querySelector("#menu-bar");
+    var navBar = document.querySelector(".navbar");
+
+    menuBtn.onclick = () => {
+      menuBtn.classList.toggle("fa-times");
+      navBar.classList.toggle("active");
+    };
